@@ -3,3 +3,8 @@
 *.iws
 target
 work
+.project
+.classpath
+.settings
+.buildpath
+test-output

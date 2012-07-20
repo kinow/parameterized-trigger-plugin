@@ -132,7 +132,6 @@ public class TriggerBuilder extends Builder implements DependecyDeclarer {
         return buildStepResult;
     }
 
-    @Override
     public void buildDependencyGraph(AbstractProject owner, DependencyGraph graph) {
         for (BuildTriggerConfig config : configs)
             for (AbstractProject project : config.getProjectList(owner.getParent(),null))

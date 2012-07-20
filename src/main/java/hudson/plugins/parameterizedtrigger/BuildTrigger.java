@@ -44,7 +44,6 @@ public class BuildTrigger extends Notifier implements DependecyDeclarer, MatrixA
 		return true;
 	}
 
-	@Override
 	public BuildStepMonitor getRequiredMonitorService() {
 		return BuildStepMonitor.NONE;
 	}
@@ -62,7 +61,6 @@ public class BuildTrigger extends Notifier implements DependecyDeclarer, MatrixA
 		return true;
 	}
 
-	@Override
 	public void buildDependencyGraph(AbstractProject owner, DependencyGraph graph) {
 		// Can only add dependencies in Hudson 1.341 or higher
 		if (!canDeclare(owner)) return;
